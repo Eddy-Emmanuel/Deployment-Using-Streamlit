@@ -43,11 +43,11 @@ if None not in collected_data:
     scaled_data = zscore(collected_data)
 
     model = st.selectbox("Select Model",
-                        ["LogisticRegression", "KNeighboursClasasifier", "GaussianNB", "SVC"])
+                        ["LogisticRegression", "KNeighboursClassifier", "GaussianNB", "SVC"])
 
     if model == "LogisticRegression":
         model_ = joblib.load("LogisticRegressionModel.pkl", "r")
-    elif model == "KNeighboursClasasifier":
+    elif model == "KNeighboursClassifier":
         model_ =joblib.load("KNeighboursClassifierModel.pkl", "r")
     elif model == "GaussianNB":
         model_ = joblib.load("GaussianNBModel.pkl", "r")
