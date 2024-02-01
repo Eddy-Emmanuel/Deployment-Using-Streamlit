@@ -40,6 +40,8 @@ To use the application, follow these steps:
 
     Access the application through Local URL:(http://localhost:8501), Network URL:(http://192.168.95.181:8501) in your browser.
 
+   Accesss the application through https://diabetes-prediction-web-app-using-app-iajsddmukqngaa4pgiow66.streamlit.app/
+
 ### Data and Model
 
 Various predictive models were trained on a dataset containing health parameters such as . The dataset is available in the (https://www.kaggle.com/datasets/mathchi/diabetes-data-set), while the pre-trained model resides in the `models` directory.
