@@ -1,4 +1,3 @@
-import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -8,7 +7,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 
-from sklearn.preprocessing import StandardScaler
+import joblib
 
 st.markdown("<center><h1>Diabetes Prediction</h1></center>", unsafe_allow_html=True)
 
