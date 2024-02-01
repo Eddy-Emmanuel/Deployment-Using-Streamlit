@@ -53,10 +53,9 @@ if None not in collected_data:
         model_ = joblib.load("GaussianNBModel.pkl", "r")
     else:
         model_ = joblib.load("SVCModel.pkl", "r")
-
-    prediction = model_.predict(scaled_data.reshape(1, -1))[0]
-
+
     if st.button("Predict"):
+      prediction = model_.predict(scaled_data.reshape(1, -1))[0]
         if prediction == 0:
             st.text("No Diabetes")
             st.balloons()
