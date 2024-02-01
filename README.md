@@ -48,10 +48,6 @@ Various predictive models were trained on a dataset containing health parameters
 
 Contributions are welcome! Feel free to open issues or submit pull requests. Your feedback and contributions are highly valued.
 
-### License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ### Acknowledgments
 
 Special thanks to God Almight for the successful completion of this project. Greater heights ahead.
