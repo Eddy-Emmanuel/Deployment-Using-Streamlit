@@ -48,7 +48,7 @@ if None not in collected_data:
     if model == "LogisticRegression":
         model_ = joblib.load("LogisticRegressionModel.pkl", "r")
     elif model == "KNeighboursClassifier":
-        model_ = joblib.load("KNeighboursClassifierModel.pkl", "r")
+        model_ = joblib.load("KNeighboursClassifierModel.pkl")
     elif model == "GaussianNB":
         model_ = joblib.load("GaussianNBModel.pkl", "r")
     else:
