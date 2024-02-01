@@ -55,12 +55,9 @@ if None not in collected_data:
         model_ = joblib.load("SVCModel.pkl", "r")
 
     if st.button("Predict"):
-      prediction = model_.predict(scaled_data.reshape(1, -1))[0]
+        prediction = model_.predict(scaled_data.reshape(1, -1))[0]
         if prediction == 0:
             st.text("No Diabetes")
             st.balloons()
         else:
-            st.text("Diabebtes present, do take care of yourself.")
-
-
-
+            st.text("Diabebtes present, do take care of yourself.")
