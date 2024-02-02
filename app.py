@@ -43,21 +43,20 @@ if None not in collected_data:
     scaled_data = zscore(collected_data)
 
     model = st.selectbox("Select Model",
-                        ["LogisticRegression", "KNeighboursClassifier", "GaussianNB", "SVC"])
+                        ["LogisticRegression", "GaussianNB", "SVC"])
 
     if model == "LogisticRegression":
         model_ = joblib.load("LogisticRegressionModel.pkl", "r")
-    elif model == "KNeighboursClassifier":
-        model_ = joblib.load("KNeighboursClassifierModel.pkl","r")
     elif model == "GaussianNB":
         model_ = joblib.load("GaussianNBModel.pkl", "r")
     else:
         model_ = joblib.load("SVCModel.pkl", "r")
-
+
+
     if st.button("Predict"):
         prediction = model_.predict(scaled_data.reshape(1, -1))[0]
         if prediction == 0:
             st.text("No Diabetes")
             st.balloons()
         else:
-            st.text("Diabebtes present, do take care of yourself.")
+            st.text("Diabebtes present, do take care of yourself.")
