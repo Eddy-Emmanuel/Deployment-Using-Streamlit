@@ -40,7 +40,7 @@ To use the application, follow these steps:
 
     Access the application through Local URL:(http://localhost:8501), Network URL:(http://192.168.95.181:8501) in your browser.
 
-   Accesss the application through https://diabetes-prediction-web-app-using-app-iajsddmukqngaa4pgiow66.streamlit.app/
+   Accesss the application through https://diabetes-prediction-web-app-using-app-7pxx92gsj8iyakjzidm9yv.streamlit.app/
 
 ### Data and Model
 
