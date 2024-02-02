@@ -5,7 +5,6 @@ from scipy.stats import zscore
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
 
 import joblib
 
